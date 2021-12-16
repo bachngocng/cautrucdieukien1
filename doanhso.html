@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thống kê doanh số bán hàng</title>
+</head>
+<body>
+<script>
+    let doanhso = parseFloat(prompt("Nhập doanh số tháng này"));
+    bonus1 = doanhso * 0.05;
+    bonus2 = doanhso * 0.1;
+    bonus3 = doanhso * 0.15;
+    if (doanhso >= 50000000) {
+        alert("Tiền hoa hồng tháng này là" + bonus1);
+    } else if (doanhso >= 200000000) {
+        alert("Tiền hoa hồng tháng này là" + bonus2);
+    } else if (doanhso >= 350000000) {
+        alert("Tiền hoa hồng tháng này là" + bonus3);
+    }
+    else {
+            alert("Hãy cố gắng hơn nữa!!")
+    }
+</script>
+</body>
+</html>

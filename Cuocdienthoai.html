@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cước điện thoại gia đình</title>
+</head>
+<body>
+<script>
+    let thoigian = parseFloat(prompt("Nhập thời gian gọi điện"));
+        giacuoc1 = 1000;
+        giacuoc2 = 700;
+    ketqua1 = thoigian * giacuoc1;
+    ketqua2 = thoigian * giacuoc2;
+    //giá cước: 1000d/phút.
+    //từ phút thứ 700 là 700d/phut
+    if (thoigian < 700) {
+        alert("Tiền điện thoại tháng này" + ketqua1)
+    }
+    else {alert("Tiền điện thoại tháng này" + ketqua2)}
+</script>
+
+</body>
+</html>

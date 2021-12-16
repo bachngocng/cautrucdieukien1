@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập IF ELSE 1</title>
+</head>
+<body>
+<script>
+    //bài 1:
+    let a = parseInt(prompt("nhập a"));
+    let b = parseInt(prompt("nhập b"));
+    if (a % b == 0) {
+        alert("a chia hết cho b");
+    } else {
+        (alert("a không chia hết cho b"));
+    }
+
+    //bài 2:
+    let age = parseInt(prompt("nhập tuổi"));
+    if (age < 15) {
+        alert("Học sinh không đủ tuổi học lớp 10");
+    } else {
+        alert("Học sinh đủ tuổi học lớp 10");
+    }
+
+    //bài 3:
+    let a = parseInt(prompt('Nhập a'));
+    if (a > 0) {
+        alert(a + 'lớn hơn 0');
+    } else {
+        alert(a + 'nhỏ hơn 0');
+    }
+
+    //bài 4:
+    let a = parseInt(prompt('Nhập a'));
+    let b = parseInt(prompt('Nhập b'));
+    let c = parseInt(prompt('Nhập c'));
+    maxValue = a;
+    if (b>maxValue) {
+        maxValue =b;
+    }
+    if (c>maxValue) {
+        maxValue =c;
+    }
+    document.write("Số lớn nhất là: " + maxValue);
+
+    //bài 5:
+    let diemkiemtra = parseFloat(prompt("nhập điểm kiểm tra"));
+    let diemthigiuaki = parseFloat(prompt("nhập điểm thi giữa kì"));
+    let diemthicuoiki = parseFloat(prompt("nhập điểm thi cuối kì"));
+    tongdiem = 0.2*diemkiemtra + 0.3*diemthigiuaki + 0.5*diemthicuoiki;
+    if (tongdiem > 8) {
+        alert("học sinh giỏi");
+    } else if (tongdiem > 5) {
+        alert("học sinh khá")
+    } else {
+        alert("học sinh kém")
+    }
+</script>
+
+</body>
+</html>
